@@ -1,0 +1,102 @@
+body {
+  background-color: rgb(210, 192, 228);
+  background-image: url(weather.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.app {
+  border: 7px solid rgb(44, 44, 83);
+  border-radius: 15%;
+  background-color: rgb(210, 192, 228, 0.8);
+  margin: 70px 300px;
+  width: 50%;
+  max-width: 100%;
+}
+
+#search-form {
+  position: relative;
+  left: -30px;
+  margin: 30px;
+  padding: 10px 0 10px 10px;
+}
+
+.geolocation-button {
+  position: relative;
+  right: -30px;
+  background-color: rgb(229, 229, 229);
+  color: rgb(168, 22, 22);
+  font-weight: bold;
+  font-size: larger;
+  padding: 10px;
+  margin: 30px;
+  border: 2.5px solid rgb(44, 44, 83);
+  border-radius: 20%;
+  transition: all 200ms ease-in-out;
+}
+
+.geolocation-button:hover {
+  background-color: rgb(226, 205, 205);
+}
+
+.go-button {
+  color: rgb(44, 44, 83);
+  font-weight: bold;
+}
+
+.output {
+  text-align: center;
+}
+
+.wind-humidity {
+  padding-top: 30px;
+}
+
+h1,
+h3,
+h5 {
+  color: rgb(44, 44, 83);
+}
+
+h3 {
+  font-size: 18px;
+}
+
+.temperature {
+  font-size: 40px;
+  font-weight: bold;
+  color: rgb(44, 44, 83);
+}
+
+.degrees {
+  font-size: 20px;
+  font-weight: bold;
+  position: relative;
+  top: -12px;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(44, 44, 83);
+}
+
+#emoji {
+  font-size: 90px;
+}
+
+#description {
+  text-transform: capitalize;
+}
+
+.three {
+  padding: 0 50px;
+}
+
+.five {
+  padding: 45px;
+}
+
+.forecast {
+  text-align: center;
+  font-weight: bold;
+}
