@@ -1,9 +1,20 @@
-// Get current Weather
+// Get current Weather & make City Output Font Smaller
 
 function showCurrentWeather(response) {
   let receivedCity = response.data.name;
   let displayedCity = document.querySelector("h1");
-  displayedCity.innerHTML = receivedCity;
+
+  let newSize = new String(receivedCity);
+
+  if (receivedCity.length > 6 && receivedCity.length < 9) {
+    displayedCity.innerHTML = newSize.fontsize(6);
+  } else {
+    if (receivedCity.length >= 9) {
+      displayedCity.innerHTML = newSize.fontsize(5);
+    } else {
+      displayedCity.innerHTML = receivedCity;
+    }
+  }
 
   let receivedTemp = Math.round(response.data.main.temp);
   let displayedTemp = document.querySelector("#temp");
