@@ -75,7 +75,7 @@ h3 {
   top: -12px;
 }
 
-a {
+.temp-conversion-link {
   text-decoration: none;
   color: rgb(44, 44, 83);
 }
@@ -99,4 +99,11 @@ a {
 .forecast {
   text-align: center;
   font-weight: bold;
+}
+
+#footer {
+  text-align: center;
+  color: rgb(44, 44, 83);
+  position: relative;
+  bottom: 6px;
 }
